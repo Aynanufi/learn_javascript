@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Adding Methods</title>
+</head>
+
+<script>
+
+    function people (name, age){
+        this.name = name;
+        this.age= age;
+        this.yearsUntilRetire = yearsLeft;
+    }
+
+    function yearsLeft(){
+        var numYears = 65 - this.age;
+        return numYears;
+    }
+
+    var ed = new people ("Ed Sheeran", 24);
+
+</script>
+<body>
+    <script>
+    document.write (ed.yearsUntilRetire());
+    </script>
+    
+</body>
+</html>

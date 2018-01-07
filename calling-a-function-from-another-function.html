@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calling a function from another function</title>
+</head>
+<body>
+
+
+    <script>
+    // function first(){
+    //     document.write("bush <br>");
+
+    // }
+    // function second(){
+    //     document.write("lots of love <br> ");
+
+    // }
+    // function third(){
+    //     document.write("love you plenty <br>");
+
+    // }
+    // function callAll(){
+    //     first();
+    //     second();
+    //     third();
+
+    // }
+
+    // callAll();
+
+    function doFirst(){
+        document.write("do first");
+        doSecond();
+    }
+    function doSecond(){
+        document.write("do second");
+        doFirst();
+    }
+
+    doFirst();
+    
+    </script>
+    
+</body>
+</html>

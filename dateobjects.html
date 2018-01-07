@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Date Objects</title>
+</head>
+<body>
+
+    <script>
+   /* function doSomething(){
+        document.write("Hello ");
+    }
+    setInterval ("doSomething()", 1000);*/
+
+function printTime(){
+    var now = new Date();
+    var hours = now.getHours();    
+    var mins = now.getMinutes();
+    var seconds = now.getSeconds();
+    document.write(hours + ":"+ mins+ ":"+ seconds + "<br>");
+}
+setInterval("printTime()", 1000);
+
+
+
+    </script>
+    
+</body>
+</html>
